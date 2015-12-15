@@ -269,18 +269,19 @@ mongoose.connect(settings.database.uri, function(err) {
         if (err) {
             console.error(err);
         }
-
-        else if (migrationRequired) {
-            console.log('Database migration required'.red);
-            console.log('Ensure you backup your database first.');
-            console.log('');
-            console.log(
-                'Run the following command: ' + 'npm run migrate'.yellow
-            );
-
-            return process.exit();
-        }
-
+/*       //WINDOWS FIX
+ *       //=======================================================
+ *       else if (migrationRequired) {
+ *           console.log('Database migration required'.red);
+ *           console.log('Ensure you backup your database first.');
+ *           console.log('');
+ *           console.log(
+ *               'Run the following command: ' + 'npm run migrate'.yellow
+ *           );
+ *
+ *           return process.exit();
+ *       }
+ */
         startApp();
     });
 });
