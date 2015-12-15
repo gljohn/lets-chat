@@ -38,6 +38,22 @@ For installation instructions, please use the following links:
 * [Heroku][install-heroku]
 * [Vagrant][install-vagrant]
 
+## GJ NOTES
+
+
+<pre>
+For those that still run into errors after installing a VS with Windows SDK and trying Besrl's solution, in particular node-gyp failing with
+
+Error MSB4019: The imported project "X:\Microsoft.Cpp.Default.props" was not found,
+
+Try running the npm install commands from a MSVS command prompt.
+
+Find it at Start menu > Microsoft Visual Studio 201X > Visual Studio Tools > Open Visual Studio 201X Tools Command Prompt or run the <Program Files>\<VS dir>\Common7\Tools\VsDevCmd.bat from a command prompt.
+
+The above worked for me with VS2012, and this Github comment helped me find that.
+</pre> 
+- http://stackoverflow.com/a/23010512/4391537
+
 ## Support & Problems
 
 We have a [troubleshooting document][troubleshooting], otherwise please use our
